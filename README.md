@@ -14,19 +14,19 @@ To use the load balancer, simply run the balance_load() function. This function 
 
 You can customize the list of SAP systems by modifying the sisteme variable in the code. Each system in the list should be a dictionary with the following keys:
 
-    id_sistem: A unique identifier for the system
-    base_url: The base URL of the system's API endpoint
-    max_concurrent_requests: The maximum number of requests that the system can process concurrently
-    current_requests: The current number of requests that the system is processing
-    last_request_time: The timestamp of the last request that was sent to the system
-    load_limit: The maximum load that the system can handle before becoming overloaded
-    timeout: The maximum time (in seconds) that the load balancer will wait for a response from the system before timing out
+    *id_sistem: A unique identifier for the system
+    *base_url: The base URL of the system's API endpoint
+    *max_concurrent_requests: The maximum number of requests that the system can process concurrently
+    *current_requests: The current number of requests that the system is processing
+    *last_request_time: The timestamp of the last request that was sent to the system
+    *load_limit: The maximum load that the system can handle before becoming overloaded
+    *timeout: The maximum time (in seconds) that the load balancer will wait for a response from the system before timing out
 
 ### Example
 
 Here's an example of how to use the load balancer:
 
-'''python
+```pythonpython
 import time
 from load_balancer import balance_load
 
