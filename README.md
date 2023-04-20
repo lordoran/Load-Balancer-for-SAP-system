@@ -27,7 +27,6 @@ You can customize the list of SAP systems by modifying the sisteme variable in t
 Here's an example of how to use the load balancer:
 
 '''python
-
 import time
 from load_balancer import balance_load
 
