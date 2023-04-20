@@ -22,11 +22,11 @@ You can customize the list of SAP systems by modifying the sisteme variable in t
     load_limit: The maximum load that the system can handle before becoming overloaded
     timeout: The maximum time (in seconds) that the load balancer will wait for a response from the system before timing out
 
-####Example
+### Example
 
 Here's an example of how to use the load balancer:
 
-***python
+'''python
 
 import time
 from load_balancer import balance_load
